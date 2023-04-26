@@ -75,12 +75,13 @@ header {
 
 .title-text {
     width: 100%;
-    font-size: clamp(3rem, 18vw, 18rem);
+    font-size: clamp(3rem, 15vw, 15rem);
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     font-family: 'Oswald', cursive;
+    top: 6vw;
 }
 
 .title-text h1 {
