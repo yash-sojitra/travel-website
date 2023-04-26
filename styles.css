@@ -157,22 +157,49 @@ h2{
 .hotels{
     height: 100vh;
     background-color: #0F1012;
-    padding: 0% 7%;
+    padding: 3% 7%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotels h2{
+    padding: 0;
 }
 
 .hotel-cards{
     display: flex;
     flex-direction: row;
-    width: 30%;
     width: 100%;
 }
 
+.hotel-card{
+    margin: 2%;
+}
+
+.card-text{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    padding: 2% 0%;
+}
+
+.card-text :nth-child(1){
+    font-weight: 700;
+}
+
 .img img{
-    width: 60%;
+    width: 100%;
+    border-radius: 10px;
 }
 
 footer{
     background-color: #1c2027;
+}
+
+.hotel-btn{
+    align-self: center;
+    padding: 1% 5%;
 }

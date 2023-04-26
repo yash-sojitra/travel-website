@@ -31,6 +31,11 @@ header {
     width: 100%;
 }
 
+.logo-text a{
+    text-decoration: none;
+    color: white;
+}
+
 .logo {
     margin-left: 5rem;
 }
@@ -95,4 +100,57 @@ footer{
     place-items: center;
     font-family: 'Poppins', sans-serif;
     color: white;
+}
+
+/* display navbar section */
+
+.nav-bar{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 1;
+    opacity: 1;
+    clip-path: circle(50px at 100% -10%);
+}
+
+.nav-links, .info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-links{
+    padding-left: 13%;
+}
+
+.nav-links div{
+    padding: 4% 0%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+.nav-links div a{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
+
+.info h2{
+    font-family: 'Lobster', cursive;
+    color: black;
+    font-size: 5rem;
+    padding-bottom: 2rem;
+}
+
+.info p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+
 }
