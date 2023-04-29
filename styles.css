@@ -90,11 +90,12 @@ header {
 
 /* tourist-spot section*/
 
-.tourist-spot{
+.tourist-spot, .location-view{
     /* height: 100vh; */
     background-color: #0F1012;
     padding: 0% 7%;
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
 }
 
@@ -102,34 +103,56 @@ h2{
     font-family: 'Lobster', cursive;
     color: white;
     font-size: 3.5rem;
-    padding: 3% 0% 0%;
+    padding: 3% 0%;
 }
 
 .photos{
     /* height: 60vh; */
+    width: 90%;
+    margin: auto;
     align-self: center;
-    padding: 3% 0%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    display: grid;
+    padding-bottom: 1rem;
+    grid-template-columns: repeat(21,1fr);
+    grid-template-rows: repeat(10,1fr);
 }
 
+.img1, .img3, .img5 {
+    grid-row: 1/10;
+}
+
+.img2, .img4{
+    grid-row: 2/-1;
+}
+
+.img1{
+    
+    grid-column:1/6 ;
+}
+.img2{
+  
+    grid-column:5/10 ;
+}
+.img3{
+   
+    grid-column:9/14 ;
+}
+.img4{
+ 
+    grid-column:13/18 ;
+}
+.img5{
+
+    grid-column: 17/-1;
+}
+
+
 .spots{
-    width: 20%;
+    width: 100%;
 }
 
 .spots img{
     width: 100%;
-}
-
-.img2, .img4{
-    position: relative;
-    margin-top: 7%;
-}
-
-.img1, .img3, .img5{
-    margin-bottom: 7%;
 }
 
 .explore-btn{
@@ -152,10 +175,41 @@ h2{
     color: white;
 }
 
+/* location view */
+
+.views{
+    display: grid;
+    grid-template-columns: repeat(11,1fr);
+    grid-template-rows: repeat(7,1fr);
+    width: 90%;
+    margin: auto;
+}
+
+.view img{
+    width: 100%;
+}
+
+.pic1{
+    grid-column: 3/6;
+    grid-row: 5/-1;
+    z-index: 1;
+}
+
+.pic2{
+    grid-column: 5/8;
+    grid-row: 1/-1;
+}
+
+.pic3{
+    grid-column: 7/10;
+    grid-row: 2/-1;
+}
+
+
+
 /* hotels section */
 
 .hotels{
-    height: 100vh;
     background-color: #0F1012;
     padding: 3% 7%;
     display: flex;
@@ -171,10 +225,16 @@ h2{
     display: flex;
     flex-direction: row;
     width: 100%;
+    padding: 1% 0%;
 }
 
 .hotel-card{
     margin: 2%;
+}
+
+.hotel-card:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
 }
 
 .card-text{

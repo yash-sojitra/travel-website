@@ -40,6 +40,11 @@ h2{
     padding: 0% 10% 7%;
 }
 
+.grid-container img:hover {
+        transform: scale(1.02);
+        transition: 0.2s ease-in-out;
+}
+
 .grid-items{
     width: 100%;
     margin-bottom: 1.5rem;
