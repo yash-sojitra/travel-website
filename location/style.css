@@ -18,6 +18,19 @@ font-family: 'Quicksand', sans-serif; */
 
 /* middle section  */
 
+/* .logo-link{
+    color:black;
+}
+
+.line1, .line2{
+    background-color: black;
+} */
+
+.title-text h1 {
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: transparent;
+}
+
 .views{
     width: 100vw;
     background-color: #0D0E09;
@@ -48,10 +61,6 @@ h2{
 .grid-items{
     width: 100%;
     margin-bottom: 1.5rem;
-}
-
-.grid-items:hover{
-
 }
 
 footer{

@@ -20,7 +20,6 @@ font-family: 'Quicksand', sans-serif; */
 /* navbar */
 
 header {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
     color: white;
     font-family: 'Abril Fatface', cursive;
     position: absolute;
@@ -29,6 +28,7 @@ header {
     align-items: center;
     height: 6rem;
     width: 100%;
+    z-index: 10;
 }
 
 .logo-text a{
@@ -43,14 +43,17 @@ header {
 .burger {
     margin-right: 5rem;
     cursor: pointer;
+    z-index: 2;
 }
 
 .line1,
 .line2 {
+    z-index: 1;
     height: 5px;
     width: 3rem;
     margin: .5rem;
     background-color: white;
+    pointer-events: none;
 }
 
 /* title section */
@@ -60,6 +63,7 @@ header {
     height: calc(((984/1920)*100vw) -(0.6rem));
     display: flex;
     flex-flow: column;
+    position: relative;
 }
 
 .back,
@@ -81,7 +85,6 @@ header {
     align-items: center;
     margin: auto;
     font-family: 'Oswald', cursive;
-    top: 6vw;
 }
 
 .title-text h1 {
@@ -154,4 +157,38 @@ footer{
     font-size: 1.2rem;
     font-weight: 300;
 
+}
+
+.cursor{
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition:all 0.5s ease-in-out;
+    transition-property: background, transform;
+    transform-origin: 75% 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrollmagic-pin-spacer{
+    pointer-events: none;
+}
+
+.cursor.nav-active{
+    transform: scale(3);
+    background-color: cornflowerblue;
+}
+
+.cursor-text{
+    font-size: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: black;
 }
