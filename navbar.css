@@ -178,10 +178,6 @@ footer{
     align-items: center;
 }
 
-.scrollmagic-pin-spacer{
-    pointer-events: none;
-}
-
 .cursor.nav-active{
     transform: scale(3);
     background-color: cornflowerblue;
