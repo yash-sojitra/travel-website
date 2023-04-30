@@ -27,8 +27,8 @@ let controller = new ScrollMagic.Controller();
 
 const parallaxTl = gsap.timeline();
 
-parallaxTl.to(text, 1, { y: "10%" });
-parallaxTl.to(backImg, 1, { y: "15%" }, "-=1");
+parallaxTl.to(text, 1, { y: "25%" });
+parallaxTl.to(backImg, 1, { y: "30%" }, "-=1");
 
 const scene = new ScrollMagic.Scene({
     triggerElement: title,

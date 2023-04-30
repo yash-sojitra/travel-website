@@ -16,8 +16,20 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Quicksand', sans-serif; */
 
+.logo-link{
+    color: black;
+}
+
+.line1, .line2{
+    background-color: black;
+}
+
 .title{
     height: calc(((1018.76/1920)*100vw) -(0.6rem));
+}
+
+.title-text{
+    top: 7vw;
 }
 
 .title-text h1{

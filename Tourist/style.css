@@ -9,6 +9,10 @@
     overflow-x: clip;
 }
 
+body{
+    background-color: #120905;
+}
+
 /* font family */
 /* 
 font-family: 'Abril Fatface', cursive;
@@ -36,6 +40,7 @@ font-family: 'Quicksand', sans-serif; */
 
 .img{
     width: 55%;
+    overflow: hidden;
 }
 
 .img img{
@@ -57,6 +62,15 @@ font-family: 'Quicksand', sans-serif; */
     font-family: 'Poppins', sans-serif;
     font-size: 1.3rem;
     font-weight: 400;
+}
+
+.reveal-img, .reveal-txt{
+    background-color: #120905;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
