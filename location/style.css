@@ -18,14 +18,6 @@ font-family: 'Quicksand', sans-serif; */
 
 /* middle section  */
 
-/* .logo-link{
-    color:black;
-}
-
-.line1, .line2{
-    background-color: black;
-} */
-
 .title-text h1 {
     -webkit-text-stroke: 1px white;
     -webkit-text-fill-color: transparent;
@@ -41,7 +33,7 @@ h2{
     color: white;
     font-size: 4rem;
     text-align: center;
-    padding: 4% 0%;
+    padding: 4% 4%;
 }
 
 .grid-container{
@@ -67,3 +59,23 @@ footer{
     background-color: #191B11;
 }
 
+@media screen and (max-width: 1080px) {
+    
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    h2 {
+        font-size: 2rem;
+    }
+}

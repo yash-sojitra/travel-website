@@ -73,7 +73,25 @@ font-family: 'Quicksand', sans-serif; */
     left: 0;
 }
 
-
 footer{
     background-color: #23130B;
+}
+
+@media screen and (max-width: 980px) {
+
+    .slide{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img, .textarea {
+        width: 90%;
+        padding: 0%;
+    }
+
+    .textarea h2 {
+        font-size: 5rem;
+    }
+
 }
