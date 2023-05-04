@@ -7,7 +7,7 @@ const front = document.querySelector(".front img");
 const main = document.querySelector("main");
 const footer = document.querySelector("footer"); 
 const burger = document.querySelector(".burger");
-const nav = document.querySelector("header");
+const navbar = document.querySelector("header");
 
 window.addEventListener("mouseover", (e) => {
     console.log(e.target.classList);
@@ -37,7 +37,6 @@ const scene = new ScrollMagic.Scene({
     triggerHook: 0
 })
     .setTween(parallaxTl)
-    .addIndicators()
     .addTo(controller);
 
 

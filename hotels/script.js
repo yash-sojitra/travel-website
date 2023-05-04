@@ -12,5 +12,4 @@ let introScene = new ScrollMagic.Scene({
     reverse: false
 })
     .setTween(introTl)
-    .addIndicators()
     .addTo(introController);

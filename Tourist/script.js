@@ -1,4 +1,5 @@
 
+
 let touristController = new ScrollMagic.Controller();
   //Select some things
   const sliders = document.querySelectorAll(".slide");
@@ -21,12 +22,7 @@ let touristController = new ScrollMagic.Controller();
       triggerHook: 0.25,
       reverse: false
     })
-      .setTween(slideTl)
-      .addIndicators({
-        colorStart: "white",
-        colorTrigger: "white",
-        name: "slide"
-      })
+      .setTween(slideTl)3
       .addTo(touristController);
     //New ANimation
     const pageTl = gsap.timeline();

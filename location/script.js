@@ -16,10 +16,5 @@ images.forEach((image, index) => {
         triggerHook: 0.75,
       })
         .setTween(imageTl)
-        .addIndicators({
-          colorStart: "white",
-          colorTrigger: "white",
-          name: "slide"
-        })
         .addTo(imageController);
 });

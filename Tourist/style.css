@@ -40,6 +40,7 @@ font-family: 'Quicksand', sans-serif; */
 
 .img{
     width: 55%;
+    position: relative;
     overflow: hidden;
 }
 
@@ -49,6 +50,7 @@ font-family: 'Quicksand', sans-serif; */
 
 .textarea{
     width: 45%;
+position: relative;
     padding-left: 7%;
 }
 
@@ -93,5 +95,4 @@ footer{
     .textarea h2 {
         font-size: 5rem;
     }
-
 }

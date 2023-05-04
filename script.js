@@ -21,13 +21,6 @@ const touristScene = new ScrollMagic.Scene({
 })
     .setTween(touristTl)
     .setPin(".tourist-spot", { pushFollowers: false })
-    .addIndicators({
-        colorStart: "white",
-        colorEnd: "white",
-        colorTrigger: "white",
-        name: "tourist",
-        indent: 100
-    })
     .addTo(control);
 
 //-----------------------location-view--------------------------//
@@ -51,13 +44,6 @@ const loactionScene = new ScrollMagic.Scene({
 })
     .setTween(locationTl)
     .setPin(".location-view", { pushFollowers: false })
-    .addIndicators({
-        colorStart: "yellow",
-        colorEnd: "yellow",
-        colorTrigger: "yellow",
-        name: "location",
-        indent: 200
-    })
     .addTo(control);
 
 
