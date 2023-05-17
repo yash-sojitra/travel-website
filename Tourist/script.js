@@ -22,7 +22,7 @@ let touristController = new ScrollMagic.Controller();
       triggerHook: 0.25,
       reverse: false
     })
-      .setTween(slideTl)3
+      .setTween(slideTl)
       .addTo(touristController);
     //New ANimation
     const pageTl = gsap.timeline();
